@@ -11,10 +11,15 @@ class LinkStore extends EventEmitter {
 		AppDispatcher.register(action => {
 			switch (action.actionType) {
 				case ActionTypes.RECEIVE_LINKS:
+					console.log("recive links case 2");
 					_links = action.links;
 					this.emit('change');
 					break;
 				default:
+					console.log("default case");
+					_links = action.links;
+					this.emit('change');
+					break;
 				// do nothing
 			}
 		});

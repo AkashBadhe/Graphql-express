@@ -1,4 +1,4 @@
-import AppDispatcher from '../Appdispatcher';
+import AppDispatcher from '../AppDispatcher';
 import { ActionTypes } from '../Constants';
 let ServerActions = {
 	receiveLinks(links) {
